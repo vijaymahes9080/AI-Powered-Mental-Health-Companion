@@ -13,7 +13,8 @@ import {
   Sparkles, 
   Activity, 
   Wind,
-  ThumbsUp
+  ThumbsUp,
+  Palette
 } from "lucide-react";
 import Link from "next/link";
 
@@ -370,6 +371,27 @@ export default function Dashboard() {
               className="px-5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 text-teal-600 dark:text-teal-400 text-xs font-bold rounded-xl shadow-sm hover-lift shrink-0"
             >
               Start Breathing Bubble
+            </Link>
+          </div>
+
+          {/* AuraPaint Art Therapy Callout */}
+          <div className="bg-gradient-to-r from-emerald-600/10 to-teal-600/10 border border-emerald-600/20 dark:border-teal-400/20 rounded-3xl p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-sm">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-emerald-600/10 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0">
+                <Palette className="h-6 w-6 animate-pulse" />
+              </div>
+              <div>
+                <h3 className="font-bold text-slate-900 dark:text-white">Try Interactive Art Therapy</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-md">
+                  Express your feelings visually and musically. Draw on our sound-synthesizing Zen Canvas to release tension.
+                </p>
+              </div>
+            </div>
+            <Link 
+              href="/art-therapy" 
+              className="px-5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 text-emerald-600 dark:text-teal-400 text-xs font-bold rounded-xl shadow-sm hover-lift shrink-0"
+            >
+              Launch Zen Canvas
             </Link>
           </div>
         </section>

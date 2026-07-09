@@ -18,7 +18,8 @@ import {
   User, 
   Loader2,
   Menu,
-  X
+  X,
+  Palette
 } from "lucide-react";
 
 interface UserContextType {
@@ -44,6 +45,7 @@ const NAV_ITEMS = [
   { name: "AI Companion", href: "/chat", icon: MessageCircle },
   { name: "AI Journal", href: "/journal", icon: BookOpen },
   { name: "Wellness Studio", href: "/studio", icon: Compass },
+  { name: "Zen Canvas", href: "/art-therapy", icon: Palette },
   { name: "Routines", href: "/routines", icon: Calendar },
   { name: "Insights", href: "/insights", icon: BarChart3 }
 ];
