@@ -1,8 +1,20 @@
+![MindSphere Banner](assets/mindsphere_banner.png)
+
 # MindSphere AI — Mental Health Companion
 
 MindSphere AI is an intelligent, privacy-first wellness companion platform designed to assist users in tracking their emotional health, reflecting on daily experiences, maintaining healthy routines, and managing stress levels. 
 
 The system leverages a modular **Multi-Agent Orchestration Engine** on the backend and an interactive, mobile-responsive **Next.js** client on the frontend. It operates with local-first parameters, integrating client-side browser AI features and end-to-end data encryption.
+
+---
+
+## 🎨 Features & Gallery
+
+Here is a preview of the creative art therapy and mindfulness modules built into MindSphere AI:
+
+| Zen Canvas Art Therapy | Mindfulness & Meditation |
+| :---: | :---: |
+| ![AuraPaint Art Therapy](assets/aurapaint_therapy.png) | ![Mindfulness & Breathing](assets/mindfulness_breathing.png) |
 
 ---
 
