@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --border: #e2e8f0;
+  
+  --primary: #0d9488; /* Calm Teal */
+  --primary-light: #ccfbf1;
+  --secondary: #6366f1; /* Serene Indigo */
+  --secondary-light: #e0e7ff;
+  
+  --accent: #f59e0b; /* Amber Energy */
+  --stress: #f43f5e; /* Rose Stress */
+  --habit: #10b981; /* Emerald Habit */
+  
+  --glass: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(226, 232, 240, 0.8);
+}
+
+.dark {
+  --background: #090d16;
+  --foreground: #f1f5f9;
+  --card: #111827;
+  --card-foreground: #f1f5f9;
+  --border: #1f2937;
+  
+  --primary: #14b8a6;
+  --primary-light: #115e59;
+  --secondary: #818cf8;
+  --secondary-light: #3730a3;
+  
+  --glass: rgba(17, 24, 39, 0.7);
+  --glass-border: rgba(31, 41, 55, 0.8);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Pulsing breathe animation */
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(13, 148, 136, 0.2);
+  }
+  40% {
+    transform: scale(1.6);
+    box-shadow: 0 0 50px rgba(13, 148, 136, 0.6);
+  }
+  60% {
+    transform: scale(1.6);
+    box-shadow: 0 0 50px rgba(13, 148, 136, 0.6);
+  }
+}
+
+.animate-breathe {
+  animation: breathe 10s ease-in-out infinite;
+}
+
+/* Subtle micro-animations */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
+}
+.dark .hover-lift:hover {
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.3);
+}
